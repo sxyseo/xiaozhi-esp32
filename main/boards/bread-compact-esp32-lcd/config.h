@@ -170,6 +170,19 @@
 #endif
 
 #ifdef CONFIG_LCD_ST7735_128X160
+#define DISPLAY_BACKLIGHT_PIN GPIO_NUM_42  // BLK 背光
+#define DISPLAY_CS_PIN        GPIO_NUM_41  // CS 片选
+#else
+#define DISPLAY_CS_PIN        GPIO_NUM_41  // CS 片选
+#define DISPLAY_BACKLIGHT_PIN GPIO_NUM_42  // BLK 背光
+#endif
+
+#define DISPLAY_MOSI_PIN      GPIO_NUM_47  // SDA 数据信号
+#define DISPLAY_CLK_PIN       GPIO_NUM_21  // SCL 时钟线
+#define DISPLAY_DC_PIN        GPIO_NUM_40  // DC 数据选择
+#define DISPLAY_RST_PIN       GPIO_NUM_45  // RES 复位
+
+#ifdef CONFIG_LCD_ST7735_128X160
 #define LCD_TYPE_ST7789_SERIAL
 #define DISPLAY_WIDTH   128
 #define DISPLAY_HEIGHT  160
