@@ -32,8 +32,8 @@
 #define DISPLAY_MIRROR_X false
 #define DISPLAY_MIRROR_Y false
 
-#define ML307_RX_PIN GPIO_NUM_20
-#define ML307_TX_PIN GPIO_NUM_19
+#define ML307_RX_PIN GPIO_NUM_11
+#define ML307_TX_PIN GPIO_NUM_12
 
 
 #endif // _BOARD_CONFIG_H_
